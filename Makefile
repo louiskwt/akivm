@@ -1,4 +1,4 @@
-SRC_FILE = src/aki.c
+SRC_FILE = aki.c
 CC_FLAGS = -Wall -Wextra -g -std=c11
 CC = gcc
 
