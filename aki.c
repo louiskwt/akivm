@@ -30,6 +30,9 @@ int ip = 0;
 int sp = -1;
 int stack[256];
 
+int fetch();
+void eval(int instr);
+
 int main() {
     while (running) {
         eval(fetch());
@@ -63,11 +66,10 @@ void eval(int instr) {
              stack[sp] = result;
              break;
         }
-        case HTL: {
+        case HLT: {
             running = false;
             break;
         }
-        default:
-            return;
-    }   
+    }
+    return;  
 }
