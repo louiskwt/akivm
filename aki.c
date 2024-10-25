@@ -9,6 +9,13 @@ typedef enum {
     HLT
 } InstructionSet;
 
+typedef enum {
+    A, B, C, D, E, F,
+    NUM_OF_REGISTERS
+} Registers;
+
+int registers[NUM_OF_REGISTERS];
+
 bool running = true;
 
 const int program[] = {
